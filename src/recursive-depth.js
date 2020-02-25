@@ -8,7 +8,7 @@ module.exports = class DepthCalculator {
 		for (let element of arr) {
 			let prom = 1;
 			if (Array.isArray(element) == true) {
-				prom = prom + calculateDepth(element);
+				prom = prom + this.calculateDepth(element);
 			}
 			sum = Math.max(sum, prom);
 		}
